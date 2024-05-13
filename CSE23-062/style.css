@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia , serif;
+}
+
+.all-content{
+    background:rgb(20, 20, 123) ;
+}
+html ::-webkit-scrollbar-track{
+   background: transparent;
+}
+
+html ::-webkit-scrollbar-thumb{
+    background:rgb(232, 175, 33) ;
+    border-radius: 10px;
+}
+
+html ::-webkit-scrollbar{
+    width: 10px;
+}
+
+/* navbar start */
+#navbar{
+        background-color: rgb(20, 20, 123)  ;
+}
+#logo img{
+    border: radius 10px; 
+    width: 160px;
+    margin-left: 40px;
+    
+}
+
+.navbar-nav{
+    margin-left: 50px;
+}
+
+.nav-item .nav-link{
+    color: rgb(206, 176, 8);
+    margin-left: 10px;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+                /*doesnt do anything
+.nav-item .nav-link:hoover{  
+    background:white  ;
+    border-radius: 5px;
+    color: black ;
+}*/
+                /*till here*/
+#navbar form button{
+    background: rgb(206, 176, 8); 
+    color: white;
+    border: 1 px solid white ;
+}
+
+
+/* navbar end */
+
+
+/*home section start*/
+
+    
+#home{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgb(108, 19, 19)  , rgb(20, 20, 123) ) , url(images/warnerbros2.jpeg) ;
+    background-color: linear-gradient(rgb(108, 19, 19)  , rgb(20, 20, 123) ) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100%;
+}
+        
+    #home .content {
+        padding-top: 210px;
+        margin-left: 56px;
+    }    
+
+    #home .content h3{
+        font-size: 50px;
+        color :white;
+    }
+
+    #home .content p{
+        margin-top: 10px;
+        color: white;
+
+    }
+                /*button*/
+    #btn{
+        width: 150px;
+        height: 36px;
+        margin-top: 20px;
+        background: white;
+        border-radius: 5px;
+        font-weight: bold;
+        border: none;
+        transition: 0.5s ease;
+        cursor: pointer;
+    }
+
+    #btn:hover{
+        background: rgb(206, 176, 8) ;  
+        color:white;
+    }
+
+/*home section end*/
+
+/* movies section start*/
+#movies{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgb(108, 19, 19)  , rgb(20, 20, 123) ) ;
+    background-color: linear-gradient(rgb(108, 19, 19)  , rgb(20, 20, 123) ) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100%;
+}
+
+
+
+  
+
+
+
+ /* Custom CSS styles */
+ .movie-card {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+    font-family: Georgia,  serif;
+    font-weight: bolder;
+    background-color: rgb(20, 20, 123) ;
+    
+}
+.movie-image {
+    max-width: 100%;
+    height: auto;
+   
+}
+
+
+/* movies section  end*/
+
+ 
+
+
+

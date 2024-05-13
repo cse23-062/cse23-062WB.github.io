@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warner Bros</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        /* Custom CSS */
+
+        /* Navbar Styles */
+        #navbar {
+            background-color: rgb(20, 20, 123);
+        }
+
+        #logo img {
+            border-radius: 10px;
+            width: 160px;
+            margin-left: 40px;
+        }
+
+        .navbar-nav {
+            margin-left: 50px;
+        }
+
+        .nav-item .nav-link {
+            color: rgb(206, 176, 8);
+            margin-left: 10px;
+            font-weight: bold;
+            transition: 0.5s;
+        }
+
+        #navbar form button {
+            background: rgb(206, 176, 8);
+            color: white;
+            border: 1px solid white;
+        }
+        .navbar-toggler {
+        color: blue !important;
+        background-color: rgb(206, 176, 8);
+        
+    }
+
+        /* Main Content Styles */
+        /* Main Content Styles */
+.all-content {
+    padding: 20px;
+}
+
+.carousel-item img {
+    height: 400px; /* Adjusted height */
+    object-fit: cover;
+    width: 90%;
+}
+
+.carousel-control {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5);
+    bottom: 0;
+    width: 100%;
+}
+
+.carousel-caption button {
+    margin-top: 10px;
+}
+
+.heading {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.card img {
+    height: calc( 500px- 20px);
+    object-fit: cover;
+    width: 100%;
+}
+
+ /* Footer Styles */
+ .footer {
+            background-color: rgb(20, 20, 123) ;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .footer p {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="all-content">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg" id="navbar">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#" id="logo"><img src="images/wb.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span> <i class="fa-solid fa-bars" style="color:blue  ; font-size: 23px;"></i></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="movies.html">Movies</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="TV Shows.html">TV Shows</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Games.html">Games & Apps</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="collections.html">Collections</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="feedback.html">Feedback</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <!-- Movies Section -->
+        
+    
+    <!-- Carousels -->
+         <div class="container-fluid">
+        <div class="row mt-4">
+            <!-- Carousel 1: TWILIGHT-->
+            <div class="col-md-6">
+                <div id="carouselAction" class="carousel slide" data-bs-ride="carousel">
+                    <div class="heading">T W I L I G H T</div>
+                    <div class="carousel-inner">
+                        
+                        
+
+                        <div class="carousel-item">
+                            <img src="images/collectionT1.jpeg" class="d-block w-100" alt="Slide 1">
+                            <div class="carousel-caption">
+                                <a href="https://youtu.be/QDRLSqm_WVg?si=8RZMzgxncxa4FxTd" class="btn btn-primary" role="button">Play Now</a>
+                            </div>
+                        </div>
+
+                        
+
+                        <div class="carousel-item">
+                            <img src="images/collectionT2.jpeg" class="d-block w-100" alt="Slide 2">
+                            <div class="carousel-caption">
+                                <button class="btn btn-primary">Play Now</button>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="images/collectionT3.jpeg" class="d-block w-100" alt="Slide 3">
+                            <div class="carousel-caption">
+                                <button class="btn btn-primary">Play Now</button>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="images/collectionT4.jpeg" class="d-block w-100" alt="Slide 4">
+                            <div class="carousel-caption">
+                                <button class="btn btn-primary">Play Now</button>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/collectionT1.jpeg" class="d-block w-100" alt="Slide 5">
+                            <div class="carousel-caption">
+                                <button class="btn btn-primary">Play Now</button>
+                            </div>
+                        </div>
+                        <div class="carousel-item active">
+                            <img src="images/collectionT2.jpeg" class="d-block w-100" alt="Slide 6">
+                            <div class="carousel-caption">
+                                <button class="btn btn-primary">Play Now</button>
+                            </div>
+                        </div>
+                       
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselAction" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselAction" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+
+
+            <!-- Carousel 2: HARRY POTTER -->
+            <div class="col-md-6">
+                <div id="carouselRomance" class="carousel slide" data-bs-ride="carousel">
+                    <div class="heading">H A R R Y   P O T T E R</div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="images/collectionH1.jpeg" class="d-block w-100" alt="Slide 1">
+                            <div class="carousel-caption">
+                                <button class="btn btn-primary">Play Now</button>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/collectionH2.jpeg" class="d-block w-100" alt="Slide 2">
+                            <div class="carousel-caption">
+                                <button class="btn btn-primary">Play Now</button>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/collectionH3.jpeg" class="d-block w-100" alt="Slide 2">
+                            <div class="carousel-caption">
+                                <button class="btn btn-primary">Play Now</button>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/collectionH4.jpeg" class="d-block w-100" alt="Slide 2">
+                            <div class="carousel-caption">
+                                <button class="btn btn-primary">Play Now</button>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/collectionH1.jpeg" class="d-block w-100" alt="Slide 2">
+                            <div class="carousel-caption">
+                                <button class="btn btn-primary">Play Now</button>
+                            </div>
+                        </div>
+                        
+
+                        
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselRomance" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselRomance" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Carousels -->
+        <div class="container-fluid">
+            <div class="row mt-4">
+                <!-- Carousel 1: KIDS -->
+                <div class="col-md-6">
+                    <div id="carouselAction" class="carousel slide" data-bs-ride="carousel">
+                        <div class="heading">K I D S</div>
+                        <div class="carousel-inner">
+                            
+                            
+    
+                            <div class="carousel-item">
+                                <img src="images/garfield.jpg" class="d-block w-100" alt="Slide 2">
+                                <div class="carousel-caption">
+                                    <button class="btn btn-primary">Play Now</button>
+                                </div>
+                            </div>
+    
+                            
+    
+                            <div class="carousel-item">
+                                <img src="images/appAngrybirds.jpeg" class="d-block w-100" alt="Slide 2">
+                                <div class="carousel-caption">
+                                    <button class="btn btn-primary">Play Now</button>
+                                </div>
+                            </div>
+    
+                            <div class="carousel-item">
+                                <img src="images/et.jpeg" class="d-block w-100" alt="Slide 2">
+                                <div class="carousel-caption">
+                                    <button class="btn btn-primary">Play Now</button>
+                                </div>
+                            </div>
+    
+                            <div class="carousel-item">
+                                <img src="images/coco.jpeg" class="d-block w-100" alt="Slide 2">
+                                <div class="carousel-caption">
+                                    <button class="btn btn-primary">Play Now</button>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/cats.jpg" class="d-block w-100" alt="Slide 2">
+                                <div class="carousel-caption">
+                                    <button class="btn btn-primary">Play Now</button>
+                                </div>
+                            </div>
+                            <div class="carousel-item active">
+                                <img src="images/aladin.jpeg" class="d-block w-100" alt="Slide 1">
+                                <div class="carousel-caption">
+                                    <button class="btn btn-primary">Play Now</button>
+                                </div>
+                            </div>
+                           
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselAction" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselAction" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+
+
+
+
+                <!-- Carousel 2: STORE-->
+                <div class="col-md-6">
+                    <div id="carouselRomance" class="carousel slide" data-bs-ride="carousel">
+                        <div class="heading">AVAILABLE FOR PURCHASE</div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="images/shop1.jpg" class="d-block w-100" alt="Slide 1">
+                                <div class="carousel-caption">
+                                    <button class="btn btn-primary">Clothing</button>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/shop2.jpg" class="d-block w-100" alt="Slide 2">
+                                <div class="carousel-caption">
+                                    <button class="btn btn-primary">Toys</button>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/shop3.jpeg" class="d-block w-100" alt="Slide 2">
+                                <div class="carousel-caption">
+                                    <button class="btn btn-primary">Home Decor</button>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/shop4.jpeg" class="d-block w-100" alt="Slide 2">
+                                <div class="carousel-caption">
+                                    <button class="btn btn-primary">Collectibles</button>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/appAdultswim.jpeg" class="d-block w-100" alt="Slide 2">
+                                <div class="carousel-caption">
+                                    <button class="btn btn-primary">Install Now</button>
+                                </div>
+                            </div>
+                            
+    
+                            
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselRomance" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselRomance" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        
+        
+    </div>
+    </div>
+
+    
+
+    
+   
+    
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

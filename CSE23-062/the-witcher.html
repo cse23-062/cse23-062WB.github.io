@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Witcher</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        /* Custom CSS */
+        
+        /*Navbar Styles */
+        
+        #navbar{
+        background-color: rgb(20, 20, 123);
+        }
+        #logo img{
+            border: radius 10px; 
+            width: 160px;
+            margin-left: 40px;
+        }
+
+        .navbar-nav{
+            margin-left: 50px;
+        }
+
+        .nav-item .nav-link{
+            color: rgb(206, 176, 8);
+            margin-left: 10px;
+            font-weight: bold;
+            transition: 0.5s;
+        }
+
+        
+        #navbar form button{
+            background: rgb(206, 176, 8); 
+            color: white;
+            border: 1 px solid white ;
+        }
+        .movie-info {
+            padding: 10px;
+        }
+
+        .movie-info h2 {
+            color: rgb(206, 176, 8);
+        }
+
+        .movie-info p {
+            color: #333;
+        }
+
+        .movie-info button {
+            margin-top: 5px;
+        }
+
+        .movie-image {
+            width: 500px;
+            height: auto;
+        }
+
+        .watch-trailer-btn {
+            position: absolute;
+            bottom: 20px;
+        }
+        .navbar-toggler {
+        color: blue !important;
+        background-color: rgb(206, 176, 8);
+        
+    }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg" id="navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#" id="logo"><img src="images/wb.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="movies.html">Movies</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="TV Shows.html">TV Shows</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Games.html">Games & Apps</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="collections.html">Collections</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="feedback.html">Feedback</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Left Section - Movie Image -->
+            <div class="col-lg-6">
+                <img src="images/theWitcher.jpeg" alt="The Witcher Poster" class="movie-image">
+            </div>
+            <!-- Right Section - Movie Info -->
+            <div class="col-lg-6 movie-info">
+                <h2>The Witcher</h2>
+                <p>
+                    The show follows the intertwined destinies of three individuals: Geralt of Rivia, a monster hunter known as a Witcher; Yennefer of Vengerberg, a powerful sorceress; and Princess Cirilla, a young princess with a mysterious destiny. Set in a medieval-inspired world, the series explores themes of destiny, politics, and the struggle between good and evil as these characters navigate a world filled with magic, monsters, and political intrigue. Geralt, Yennefer, and Ciri's paths eventually converge as they discover their roles in shaping the future of the Continent.
+                </p>
+                <p2>
+                    <ul>
+                        <li><strong>Genre:</strong> Action, Drama, Fantasy, Adventure</li>
+                        <li><strong>Created by:</strong> Lauren Schmidt Hissrich</li>
+                        <li><strong>Based on:</strong> The Witcher by Andrzej Sapkowski</li>
+                        <li><strong>Showrunner:</strong> Lauren Schmidt Hissrich</li>
+                        <li><strong>Starring:</strong>
+                            <ul>
+                                <li>Henry Cavill</li>
+                                <li>Anya Chalotra</li>
+                                <li>Freya Allan</li>
+                                <li>Eamon Farren</li>
+                                <li>Joey Batey</li>
+                                <li>MyAnna Buring</li>
+                                <li>Royce Pierreson</li>
+                                <li>Mimî M. Khayisa</li>
+                                
+                            </ul>
+                        </li>
+                    </ul>
+                </p2>
+                <button class="btn btn-primary watch-trailer-btn" onclick="window.open('https://youtu.be/ndl1W4ltcmg?si=l1oFh-rUspPHR3Gr', '_blank')">Watch Trailer</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

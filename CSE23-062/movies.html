@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warner Bros</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+       
+         /* Movie Card Styles */
+         .movie-card {
+            margin-bottom: 20px;
+            text-align: center;
+            cursor: pointer;
+            transition: transform 0.5s;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            width: calc( 60- 20px); /* Set width to ensure three cards per row with no space between them */
+            display: inline-block;
+            vertical-align: top;
+            margin-right: 20px; /* Add margin to separate cards */
+        }
+
+        .movie-card:last-child {
+            margin-right: 0; /* Remove margin for the last card in each row */
+        }
+
+        .movie-card:hover {
+            transform: scale(1.2);
+        }
+
+        .movie-image {
+            width: 100%;
+            height: auto;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        .movie-card h3 {
+            margin-top: 10px;
+            color: rgb(206, 176, 8);
+            font-size: 18px;
+        }
+
+        /*Navbar Styles */
+        
+        #navbar{
+        background-color: rgb(20, 20, 123);
+        }
+        #logo img{
+            border: radius 10px; 
+            width: 160px;
+            margin-left: 40px;
+        }
+
+        .navbar-nav{
+            margin-left: 50px;
+        }
+
+        .nav-item .nav-link{
+            color: rgb(206, 176, 8);
+            margin-left: 10px;
+            font-weight: bold;
+            transition: 0.5s;
+        }
+
+        
+        #navbar form button{
+            background: rgb(206, 176, 8); 
+            color: white;
+            border: 1 px solid white ;
+        }
+        .navbar-toggler {
+        color: blue !important;
+        background-color: rgb(206, 176, 8);
+        
+    }
+
+        /* Footer Styles */
+        .footer {
+            background-color: rgb(20, 20, 123) ;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .footer p {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="all-content">
+        <!--navbar start-->
+        <nav class="navbar navbar-expand-lg" id="navbar">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#" id="logo"><img src="images/wb.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="movies.html">Movies</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="TV Shows.html">TV Shows</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Games.html">Games & Apps</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="collections.html">Collections</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="feedback.html">Feedback</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        
+        <!--navbar end-->
+
+        <!-- Movies Section -->
+        <section id="movies">
+            <div class="container">
+                <h1 class="text-center" style="color: rgb(232, 175, 33)"> On Demand </h1>
+                <!-- Movie Cards - Row 1 ------------------------------------------------------------------------------------------------------------------------>
+                <div class="row">
+                    <!-- the conjuring Card -->
+                    <div class="col-md-2">
+                        <div class="movie-card" onclick="window.location.href='the-conjuring.html'">
+                            <img src="images/theconjuring.jpeg" alt="the-conjuring Poster" class="movie-image">
+                            <h3 class="mt-2" style="color: rgb(206, 176, 8)">The Conjuring</h3>
+                        </div>
+                    </div>
+                    <!-- The set it off Card -->
+                    <div class="col-md-2">
+                        <div class="movie-card" onclick="window.location.href='setitoff.html'">
+                            <img src="images/setitoff.jpeg" alt="setitoff poster" class="movie-image">
+                            <h3 class="mt-2" style="color: rgb(206, 176, 8)">Set It Off</h3>
+                        </div>
+                    </div>
+                    <!-- justice league Card -->
+                    <div class="col-md-2">
+                        <div class="movie-card">
+                            <img src="images/justiceleague.jpeg" alt="justice league Poster" class="movie-image">
+                            <h3 class="mt-2" style="color: rgb(206, 176, 8)">Justice League</h3>
+                        </div>
+                    </div>
+                    <!-- The jaws Card -->
+                    <div class="col-md-2">
+                        <div class="movie-card">
+                            <img src="images/jaws.jpg" alt="jaws Poster" class="movie-image">
+                            <h3 class="mt-2" style="color: rgb(206, 176, 8)">Jaws</h3>
+                        </div>
+                    </div>
+                    <!-- garfield Card -->
+                    <div class="col-md-2">
+                        <div class="movie-card">
+                            <img src="images/garfield.jpg" alt="garfield Poster" class="movie-image">
+                            <h3 class="mt-2" style="color: rgb(206, 176, 8)">Garfield</h3>
+                        </div>
+                    </div>
+                    <!-- aladin Card -->
+                    <div class="col-md-2">
+                        <div class="movie-card">
+                            <img src="images/aladin.jpeg" alt="aladinPoster" class="movie-image">
+                            <h3 class="mt-2" style="color: rgb(206, 176, 8)">Aladin</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-------------movie cards row 2--------------------------------------------------------------------------------------------------->
+                <h2 class="text-center" style="color: rgb(232, 175, 33)"> Best Sellers </h2>
+                <div class="row">
+                    
+                    <!-- Batman Card -->
+                    <div class="col-md-2">
+                        <div class="movie-card">
+                            <img src="images/batman.jpeg" alt="batman Poster" class="movie-image">
+                            <h3 class="mt-2" style="color: rgb(206, 176, 8)">Batman</h3>
+                        </div>
+                    </div>
+                    <!-- black panther Card -->
+                    <div class="col-md-2">
+                        <div class="movie-card">
+                            <img src="images/blackpanther.jpg" alt="Black Panther Poster" class="movie-image">
+                            <h3 class="mt-2" style="color: rgb(206, 176, 8)">Black Panther</h3>
+                        </div>
+                    </div>
+                    <!-- doctor Card -->
+                    <div class="col-md-2">
+                        <div class="movie-card">
+                            <img src="images/doctor who.jpeg" alt="doctor who Poster" class="movie-image">
+                            <h3 class="mt-2" style="color: rgb(206, 176, 8)">Doctor Who</h3>
+                        </div>
+                    </div>
+                    <!-- The matrix Card -->
+                    <div class="col-md-2">
+                        <div class="movie-card">
+                            <img src="images/matrix.jpeg" alt="the matrix Poster" class="movie-image">
+                            <h3 class="mt-2" style="color: rgb(206, 176, 8)">The Matrix</h3>
+                        </div>
+                    </div>
+                    <!-- Men in black Card -->
+                    <div class="col-md-2">
+                        <div class="movie-card">
+                            <img src="images/meninblack.jpg" alt="Men in black Poster" class="movie-image">
+                            <h3 class="mt-2" style="color: rgb(206, 176, 8)">Men In Black</h3>
+                        </div>
+                    </div>
+                    <!-- The sherlock Card -->
+                    <div class="col-md-2">
+                        <div class="movie-card">
+                            <img src="images/sherlock.jpeg" alt="sherlock Poster" class="movie-image">
+                            <h3 class="mt-2" style="color: rgb(206, 176, 8)">Sherlock</h3>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-------------movie cards row3 --------------------------------------------------------------------------------------------------->
+                <h3 class="text-center" style="color: rgb(232, 175, 33)"> For the Kids </h3>
+                <div class="row">
+                    
+                    <!-- bolt Card -->
+                    <div class="col-md-2">
+                        <div class="movie-card">
+                            <img src="images/bolt.jpeg" alt="bolt Poster" class="movie-image">
+                            <h3 class="mt-2" style="color: rgb(206, 176, 8)">Bolt</h3>
+                        </div>
+                    </div>
+                    <!-- The coco Card -->
+                    <div class="col-md-2">
+                        <div class="movie-card">
+                            <img src="images/coco.jpeg" alt="coco Poster" class="movie-image">
+                            <h3 class="mt-2" style="color: rgb(206, 176, 8)">Coco</h3>
+                        </div>
+                    </div>
+                    <!-- The cats Card -->
+                    <div class="col-md-2">
+                        <div class="movie-card">
+                            <img src="images/cats.jpg" alt="The Rookie Poster" class="movie-image">
+                            <h3 class="mt-2" style="color: rgb(206, 176, 8)">Cats</h3>
+                        </div>
+                    </div>
+                    <!-- emoji Card -->
+                    <div class="col-md-2">
+                        <div class="movie-card">
+                            <img src="images/emoji.jpeg" alt="emoji Poster" class="movie-image">
+                            <h3 class="mt-2" style="color: rgb(206, 176, 8)">The Emoji movie</h3>
+                        </div>
+                    </div>
+                    <!-- frozen Card -->
+                    <div class="col-md-2">
+                        <div class="movie-card">
+                            <img src="images/frozen.jpeg" alt="frozen Poster" class="movie-image">
+                            <h3 class="mt-2" style="color: rgb(206, 176, 8)">Frozen</h3>
+                        </div>
+                    </div>
+                    <!-- The up Card -->
+                    <div class="col-md-2">
+                        <div class="movie-card">
+                            <img src="images/up.jpeg" alt="up Poster" class="movie-image">
+                            <h3 class="mt-2" style="color: rgb(206, 176, 8)">Up</h3>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-------movie card row 4-->
+                <h4 class="text-center" style="color: rgb(232, 175, 33)"> About to go </h4>
+                <div class="row">
+                   
+                    <!-- Yellowstone Card -->
+                    <div class="col-md-2">
+                        <div class="movie-card">
+                            <img src="images/tvyellowstone.jpeg" alt="Yellowstone Poster" class="movie-image">
+                            <h3 class="mt-2" style="color: rgb(206, 176, 8)">Yellowstone</h3>
+                        </div>
+                    </div>
+                    <!-- do little Card -->
+                    <div class="col-md-2">
+                        <div class="movie-card">
+                            <img src="images/do little.jpg" alt="Do little Poster" class="movie-image">
+                            <h3 class="mt-2" style="color: rgb(206, 176, 8)">Do little</h3>
+                        </div>
+                    </div>
+                    <!-- et Card -->
+                    <div class="col-md-2">
+                        <div class="movie-card">
+                            <img src="images/et.jpeg" alt="et Poster" class="movie-image">
+                            <h3 class="mt-2" style="color: rgb(206, 176, 8)">E.T</h3>
+                        </div>
+                    </div>
+                    <!-- noelle Card -->
+                    <div class="col-md-2">
+                        <div class="movie-card">
+                            <img src="images/noelle.jpeg" alt="noelle Poster" class="movie-image">
+                            <h3 class="mt-2" style="color: rgb(206, 176, 8)">Noelle</h3>
+                        </div>
+                    </div>
+                    <!-- shrek Card -->
+                    <div class="col-md-2">
+                        <div class="movie-card">
+                            <img src="images/shrek.jpeg" alt="shrek Poster" class="movie-image">
+                            <h3 class="mt-2" style="color: rgb(206, 176, 8)">Shrek</h3>
+                        </div>
+                    </div>
+                    <!-- unfrosted Card -->
+                    <div class="col-md-2">
+                        <div class="movie-card">
+                            <img src="images/unfrosted.jpeg" alt="unfrosted Poster" class="movie-image">
+                            <h3 class="mt-2" style="color: rgb(206, 176, 8)">Unfrosted</h3>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Footer Section -->
+        <footer class="footer">
+            <div class="container">
+                <p>Contact Us: example@example.com | Phone: 123-456-7890</p>
+                <p>&copy; 2024 Warner Bros. All Rights Reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
